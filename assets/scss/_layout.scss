@@ -1,0 +1,389 @@
+* {
+  &,
+  &:before,
+  &:after {
+    box-sizing: border-box;
+  }
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+.clearfix {
+  &:before {
+    content: " ";
+    display: table;
+  }
+
+  &:after {
+    content: " ";
+    display: table;
+    clear: both;
+  }
+
+  *zoom: 1;
+}
+
+body {
+  background-color: $base-background-color;
+}
+
+hr {
+  border-top: none;
+  border-bottom: 2px solid lighten($light-gray-color, 7%);
+  width: 100%;
+  margin: $small-spacing 0;
+}
+
+.container {
+  padding: $base-spacing;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 700px;
+  font-weight: normal;
+}
+
+.site-title {
+//  @include relative-font-size(1.8);
+//  font-family: 'Spectral', serif;
+//  font-style: italic;
+//  font-weight: 600;
+  font-size: 20px;
+  margin-bottom: 0;
+
+  img {
+    padding-right: 10px;
+  }
+
+  &,
+  &:hover {
+    //color: $text-color;
+    text-decoration: none;
+  }
+  &:visited {
+    //color: $text-color;
+  text-decoration: none;
+  }
+}
+
+.pull-left {
+  float: left;
+}
+
+.pull-right {
+  float: right;
+}
+
+.link {
+  color: $blue-color;
+  padding-bottom: .05em;
+  border-bottom: 2px solid transparent;
+
+  @include transition(border 300ms linear);
+
+  &:hover,
+  &:focus,
+  &:active {
+    border-bottom: 2px solid $blue-color;
+  }
+}
+
+.nav-link {
+  color: $blue-color;
+  padding-bottom: 0.05em;
+  border-bottom: 2px solid transparent;
+
+  @include transition(border 300ms linear);
+
+  &:hover,
+  &:focus,
+  &:active {
+    border-bottom: 2px solid $black-color;
+  }
+}
+
+
+.site-header {
+  /*background: url(https://raw.githubusercontent.com/tomaskul/tomaskul.github.io/master/assets/images/header.png);*/
+  background: lighten($blueish-gray-color, 10%)
+  linear-gradient(45deg, rgba(242,242,242,0.5),rgba(229,229,229,0.5));
+  background-blend-mode: overlay;
+  border-bottom: 1px solid lighten($blueish-gray-color, 15%);
+  margin-bottom: $small-spacing;
+  min-height: 80px;
+}
+
+
+.site-header {
+  border-bottom: 1px solid lighten($light-gray-color, 1%);
+  margin-bottom: $small-spacing;
+  min-height: 80px;
+}
+
+
+.intro {
+  .author-name {
+    display: inline-block;
+    padding: 0 .2em;
+    background: lighten($light-gray-color, 15%)
+  }
+
+  a {
+    @extend .link;
+  }
+
+  .container {
+    padding-bottom: 0;
+  }
+}
+
+.logo {
+  float: left;
+  margin: 0 0 1em 0;
+  cursor: pointer;
+  letter-spacing: 0.8px;
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 300;
+
+  span {
+    font-weight: 700;
+  }
+}
+
+.logo_img {
+  float: left;
+}
+
+.nav {
+  min-height: 64px;
+}
+.site-nav {
+  float: right;
+  line-height: $base-line-height * $base-font-size * 2.25;
+  font-size: 16px;
+
+  .nav-trigger {
+      display: none;
+  }
+
+  .menu-icon {
+    display: none;
+  }
+
+  .page-link {
+    //color: $text-color;
+    line-height: $base-line-height;
+
+    // Gaps between nav items, but not on the last one
+    &:not(:last-child) {
+      margin-right: 20px;
+    }
+  }
+
+}
+.navbar {
+  float: right;
+  margin: -22px 13px 24px 19px;
+  position: relative;
+  padding: 0;
+  pointer-events: all;
+  cursor: pointer;
+
+  li {
+    display: inline-block;
+  }
+
+  a {
+    @extend .nav-link;
+  }
+}
+
+.post-list {
+
+}
+
+.category-title {
+  margin: 1em 0 0.5em 0;
+
+  &:first-child {
+    margin-top: 0;
+  }
+}
+
+.post-item {
+  margin-bottom: 0.2em;
+  display: block;
+
+  /*a {
+    color: $action-color;
+    font-weight: bold;
+  }*/
+
+  .article-title {
+    display: inline-block;
+    width: 85%;
+  }
+
+  .date-label {
+    //border: 1px solid lighten($light-gray-color, 10%);
+    padding: 0 0.2em;
+    margin-left: 1em;
+    margin-top: 2px;
+    @extend .pull-right;
+  }
+
+}
+
+.post-meta {
+  color: $medium-gray-color;
+  text-transform: uppercase;
+  display: inline-block;
+  letter-spacing: 1px;
+  font-size: rem(14);
+  margin-bottom: 1px;
+}
+
+.post-title {
+  margin-top: 0;
+  margin-bottom: 2em;
+  color: $dark-gray-color;
+}
+
+.post-link,
+.post a,
+.page a {
+  @extend .link;
+}
+
+.post {
+  @extend .clearfix;
+}
+
+.pagination {
+  li, a, span {
+    display: inline-block;
+  }
+
+  a, span {
+    font-size: rem(12);
+    padding: .5em;
+  }
+
+  .prev, .next {
+    @extend .link;
+  }
+}
+
+.share {
+  border-top: 0.2em dashed lighten($light-gray-color, 13%);
+  padding-top: $base-spacing;
+  margin-top: $base-spacing * 2;
+
+  p {
+    margin: 0;
+    font-size: rem(14);
+    color: $medium-gray-color;
+  }
+}
+
+.disqus {
+  background-color: lighten($light-gray-color, 16%);
+  padding: $base-spacing 0;
+
+  hr {
+    margin: $base-spacing 0;
+  }
+}
+
+.site-footer {
+  @extend .clearfix;
+
+  padding: $base-spacing 0;
+
+  a {
+    @extend .link;
+  }
+
+  small {
+    display: block;
+    font-size: 0.8em;
+    color: darken($medium-gray-color, 10%);
+  }
+
+  .block {
+    display: block;
+  }
+}
+
+.video-container {
+	position:relative;
+	padding-bottom:56.25%;
+	padding-top:30px;
+	height:0;
+	overflow:hidden;
+
+  iframe,
+  object,
+  embed {
+    position:absolute;
+  	top:0;
+  	left:0;
+  	width:100%;
+  	height:100%;
+  }
+}
+
+.divider {
+  border-top: 0.2em solid lighten($light-gray-color, 13%);
+  margin-bottom: $base-spacing * 2;
+  margin-top: $base-spacing * 2;
+}
+
+// This applies from 0px to 450px
+
+@media (max-width: 450px) {
+  .date-label {
+    float: left !important;
+    border: 0 !important;
+    margin-left: -2px !important;
+    margin-top: 2px;
+    margin-right: 1em;
+  }
+
+  .post-item {
+    border: 1px solid lighten($light-gray-color, 10%);
+    padding: 0 0.5em;
+    background: lighten($light-gray-color, 15%);
+  }
+
+  .article-title {
+    border-bottom: none !important;
+  }
+
+  .post-link {
+    &:hover,
+    &:focus,
+    &:active {
+      border-bottom: 2px solid transparent;
+      color: $blue-color;
+    }
+  }
+
+  .navbar {
+    /* float: right;*/
+    margin: 0;
+    position: relative;
+    padding: 0;
+    pointer-events: all;
+    cursor: pointer;
+
+    li {
+      display: inline-block;
+      padding: 0 .6em;
+    }
+  }
+}

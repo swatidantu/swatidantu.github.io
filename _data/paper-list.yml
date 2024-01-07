@@ -1,0 +1,39 @@
+- name: Adaptive Tracking and Anti-swing Control of Quadrotors Carrying Suspended Payload;
+  authors: Swati Dantu, Rishabh Dev Yadav, Spandan Roy, and Simone Baldi 
+  # paper_link:
+  # video_link: 
+  # paper: '[Paper]'
+  # video: '[Video]'
+  conf: CST, 2023
+  review: '[Under Review]'
+
+# - name: Adaptive Anti-swing Control for Clasping Operations in Quadrotors with Cable-suspended Payload
+#   authors: Swati Dantu, Rishabh Dev Yadav, Spandan Roy, and Simone Baldi 
+#   # paper_link:
+#   # video_link: 
+#   # paper: '[Paper]'
+#   # video: '[Video]'
+#   conf: ICRA, 2023
+#   review: '[Under Review]'
+
+
+- name: Adaptive Artificial Time Delay Control for Quadrotors under State-dependent Uncertainties;
+  authors: Swati Dantu, Rishabh Dev Yadav, Spandan Roy, Jinoh Lee and Simone Baldi 
+  paper_link: https://ieeexplore.ieee.org/abstract/document/10011673
+  video_link: https://youtu.be/G1whZNlz9zw
+  paper: '[Paper]'
+  video: '[Video]'
+  conf: ROBIO, 2022
+  # review: Under Review
+
+
+- name: Adaptive Artificial Time Delay Control for Bipedal Walking with Robustification to State- dependent Constraint Forces;
+  authors: Amisha Bhaskar*, Swati Dantu*, Spandan Roy, Jinoh Lee and Simone Baldi 
+  paper_link: https://ieeexplore.ieee.org/document/9659482
+  video_link: https://youtu.be/TQxreImz7No
+  paper: '[Paper]'
+  video: '[Video]'
+  conf: ICAR, 2021
+  # review: Under Review
+
+

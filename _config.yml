@@ -1,0 +1,72 @@
+
+# SEO settings
+title: "Swati"
+title2: "Dantu"
+favicon: /favicon.ico
+# default: ""
+description: "Quirks of Swati Dantu"
+# keywords: "SEO, blog, web, minimalist, University of Nottingham, Computer Science, Student, Programming, Placements"
+url: https://swatidantu.github.io # site url
+baseurl: "" # apply repo name if use it under gh-pages branch
+# baseurl: null # apply null if repo name is something like username.github.io
+
+# google_analytics: UA-XXXXX-XX
+repo: https://github.com/swatidantu/swatidantu.github.io
+disqus_shortname: ""
+twitter_username: "swati_dantu"
+comments: false
+
+# Build settings
+permalink   : /:year/:title/
+highlighter : rouge
+markdown    : kramdown
+extensions:
+    - normalize
+    - smart
+    - mathjax
+    - csl: _styles/apa.csl
+    - bibliography: bibliography/references.bib
+
+source: ./
+destination: ./_site
+
+# Sass configuration
+sass:
+  sass_dir: assets/scss
+  style: compressed # expanded
+
+# Author settings
+author:
+  name     : "Swati Dantu"
+  job      : "Work-in-Progress Robotics Researcher"
+  bio      : "Check out some of the projects I've worked on in the past."
+  # thumb    : /assets/images/me.png
+  email    : swati.dantu@gmail.com
+  url      : https://swatidantu.github.io
+  github   : https://github.com/swatidantu
+  twitter  : https://twitter.com/swati_dantu
+  facebook : 
+linkedin : 
+
+# social settings
+og_locale: "en_UK"
+twitter_card: "summary_large_image"
+twitter_site: "@swati_dantu"
+
+plugins:
+  - bourbon
+  - jekyll-paginate
+  - jekyll-seo-tag
+  - jekyll-toc
+  - jekyll-pandoc
+
+# navbar pages
+navbar:
+  - slug : about
+    title: About
+  - slug : blog
+    title: Blog
+  - slug : notes
+    title: Notes
+
+exclude: ["gulp", "node_modules", "bower", "bower_components", "config.rb", "src", "Gemfile", "Gemfile.lock", ".rvmrc", ".rbenv-version", "package.json", "gulpfile.js", "README.md", "Rakefile", "changelog.md","vendor"]

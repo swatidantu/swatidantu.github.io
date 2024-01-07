@@ -1,0 +1,19 @@
+GEM
+  remote: http://rubygems.org/
+  specs:
+    minitest (5.14.4)
+    mocha (1.13.0)
+    rake (13.0.6)
+    rdoc (6.3.3)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  minitest
+  mocha
+  rake
+  rdoc
+
+BUNDLED WITH
+   2.2.28

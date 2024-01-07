@@ -1,0 +1,29 @@
+<h1> Publications </h1>
+<ul>
+{% for paper in site.data.paper-list %}
+  {% capture review %}{{ paper.review }}{% endcapture %}
+  {% capture paper_link %}{{ paper.paper_link }}{% endcapture %}
+  {% capture video_link %}{{ paper.video_link }}{% endcapture %}
+  {% capture Paper %}{{ paper.paper }}{% endcapture %}
+  {% capture video %}{{ paper.video }}{% endcapture %}
+
+
+    <style>
+        h8{float: right;}
+    </style>
+
+    <li>
+    <h5>{{ review }}</h5>
+    <h5>[{{ paper.conf }}]</h5>
+    <!-- <h6p>[{{ paper.year }}]</h6p> -->
+    <h6>{{ paper.name; }}</h6>
+    <h5>{{ paper.authors }}</h5>
+    <h6><a href="{{ paper_link }}">{{ Paper }}</a></h6>
+    <h6><a href="{{ video_link }}">{{ paper.video }}</a></h6></li>
+      
+      
+  
+    <!-- <br> -->
+ 
+{% endfor %}
+</ul>

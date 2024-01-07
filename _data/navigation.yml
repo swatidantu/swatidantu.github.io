@@ -1,0 +1,13 @@
+# - link: /about
+#   name: About
+# - link: /notes
+#   name: Notes
+# - link: /blog
+#   name: Blog
+# - link: /research
+#   name: Research
+
+
+# - link: /feed.xml
+#   name: RSS
+#   newtab: true

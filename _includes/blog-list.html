@@ -1,0 +1,16 @@
+<h1> Blog </h1>
+{% for blog in site.data.blog-list %}
+  {% capture current_year %}{{ blog.year }}{% endcapture %}
+
+    <style>
+        h8{float: right;
+          display: inline-block;}
+        h7{float: left;
+          display: inline-block;}
+    </style>
+    <h7><a href="{{ blog.link | prepend: blog.url }}">{{ blog.name }}</a></h7>
+    <h8>{{ current_year }}</h8>
+    <br>
+ 
+{% endfor %}
+

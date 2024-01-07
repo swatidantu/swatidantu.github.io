@@ -1,0 +1,17 @@
+{% if project.year %}
+  {{ project.year }}
+{% else %}
+  No year
+{% endif %}
+
+{% if project.tech %}
+  {{ project.tech }}
+{% else %}
+  No technologies used
+{% endif %}
+
+{% if project.category %}
+  {{ project.category }}
+{% else %}
+  Belongs to no category
+{% endif %}
