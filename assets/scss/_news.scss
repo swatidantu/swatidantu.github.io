@@ -1,0 +1,63 @@
+// News / Featured items styling
+// Light (white) block with reduced font sizes for compact display
+
+.news-section{
+  background:transparent;
+  color:#111;
+  padding:0; /* inherit spacing from parent `.page-content` to align with publications */
+  border-radius:6px;
+  margin-bottom:20px;
+  border: none;
+}
+.news-section h2{margin:0 0 12px 0;font-size:18px;font-weight:600;color:$black-color}
+.news-list{display:flex;flex-direction:column;gap:16px}
+.news-item{display:flex;align-items:flex-start;gap:16px}
+.news-date{flex:0 0 140px;font-weight:400;font-size:$section-font-size;color:$blueish-gray-color}
+.news-body{flex:1;font-size:$section-font-size;color:$dark-gray-color;line-height:1.35;font-weight:400}
+.news-body, .news-body p, .news-body li, .news-body span {font-size:$section-font-size;font-weight:400;color:$dark-gray-color}
+.news-body p{margin:0}
+.news-body a{color:$blue-color;text-decoration:none}
+
+@media (max-width:900px){
+  .news-item{flex-direction:column}
+  .news-date{flex:0 0 auto}
+}
+
+/* Make intro paragraph match news body */
+.intro .container p{font-size:$section-font-size;font-weight:400;line-height:1.35;color:#111}
+
+/* Intro two-column layout (text left, image right) */
+.intro-row{display:flex;align-items:flex-start;gap:18px}
+.intro-text{flex:1}
+.intro-media{flex:0 0 72px;display:flex;flex-direction:column;align-items:center;justify-content:flex-start;overflow:visible}
+.intro-avatar-right{width:256px;height:256px;border-radius:6px;object-fit:cover;margin-bottom:6px}
+
+@media (max-width:720px){
+  .intro-row{flex-direction:column}
+  .intro-media{flex:0 0 auto;justify-content:flex-start}
+  .intro-avatar-right{width:128px;height:128px}
+}
+
+/* Profile links under the avatar */
+.profile-links{display:flex;flex-direction:row;align-items:center;gap:6px;margin-top:8px;font-size:12px}
+.profile-links a{color:$blue-color;text-decoration:none;display:inline-flex;align-items:center;gap:6px}
+.intro-media .profile-links a:hover{text-decoration:underline}
+
+.profile-links .sep{color:#999;margin:0 4px}
+
+@media (max-width:720px){
+  .profile-links{flex-direction:column;align-items:flex-start;gap:6px}
+}
+
+/* Secondary profile links (row under avatar) */
+.profile-links-secondary{display:flex;align-items:center;gap:6px;margin-top:6px;font-size:12px;color:#444}
+.profile-links-secondary a{color:$blue-color;text-decoration:none;display:inline-flex;align-items:center;gap:6px}
+.profile-links-secondary .sep{color:#999;margin:0 4px}
+.profile-links-secondary a:hover{text-decoration:underline}
+
+@media (max-width:720px){
+  .profile-links-secondary{flex-direction:row;gap:6px}
+}
+
+/* Ensure page-level H3 headings are not bold (Featured News, Publications) */
+.page-content h2{font-weight:600;font-size:18px;margin:0 0 12px 0}

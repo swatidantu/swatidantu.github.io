@@ -1,39 +1,63 @@
-- name: Adaptive Tracking and Anti-swing Control of Quadrotors Carrying Suspended Payload;
-  authors: Swati Dantu, Rishabh Dev Yadav, Spandan Roy, and Simone Baldi 
-  # paper_link:
+- name: Simultaneous learning of state-to-state minimum-time planning and control
+  authors: Swati Dantu, Robert Pěnička, Martin Saska
+  paper_link: https://arxiv.org/abs/2510.20008
   # video_link: 
-  # paper: '[Paper]'
+  paper: '[Paper]'
   # video: '[Video]'
-  conf: CST, 2023
-  review: '[Under Review]'
+  conf: International Conference on Informatics in Control, Automation and Robotics (ICINCO), 2025
+  # review: '[Under Review]'
+  image: /assets/images/papers/icinco2025.png
 
-# - name: Adaptive Anti-swing Control for Clasping Operations in Quadrotors with Cable-suspended Payload
-#   authors: Swati Dantu, Rishabh Dev Yadav, Spandan Roy, and Simone Baldi 
-#   # paper_link:
-#   # video_link: 
-#   # paper: '[Paper]'
-#   # video: '[Video]'
-#   conf: ICRA, 2023
-#   review: '[Under Review]'
+- name: Modular adaptive aerial manipulation under unknown dynamic coupling forces
+  authors: Rishabh Dev Yadav*, Swati Dantu*, Wei Pan, Sihao Sun, Spandan Roy, Simone Baldi
+  paper_link: https://ieeexplore.ieee.org/abstract/document/10701509/
+  # video_link: 
+  paper: '[Paper]'
+  # video: '[Video]'
+  conf: IEEE/ASME Transactions on Mechatronics, 2024
+  # review: '[Under Review]'
+  image: /assets/images/papers/TMech_Aerial_Manipulator.png
+
+- name: Adaptive Tracking and Anti-Swing Control of Quadrotors Carrying Suspended Payload Under State-Dependent Uncertainty
+  authors: Swati Dantu, Rishabh Dev Yadav, Ananth Rachakonda, Spandan Roy, Simone Baldi
+  paper_link: https://ieeexplore.ieee.org/abstract/document/10769989/
+  # video_link: 
+  paper: '[Paper]'
+  # video: '[Video]'
+  conf: IEEE/ASME Transactions on Mechatronics, 2024
+  # review: '[Under Review]'
+  image: /assets/images/papers/TMech_suspended_payload.png
+
+- name: Adaptive anti-swing control for clasping operations in quadrotors with cable-suspended payload
+  authors: Swati Dantu, Rishabh Dev Yadav, Ananth Rachakonda, Spandan Roy, Simone Baldi
+  paper_link: https://ieeexplore.ieee.org/abstract/document/10383203
+  # video_link: 
+  paper: '[Paper]'
+  # video: '[Video]'
+  conf: IEEE Conference on Decision and Control (CDC), 2023
+  # review: '[Under Review]'
+  image: /assets/images/papers/CDC2023.png
 
 
-- name: Adaptive Artificial Time Delay Control for Quadrotors under State-dependent Uncertainties;
+- name: Adaptive Artificial Time Delay Control for Quadrotors under State-dependent Uncertainties
   authors: Swati Dantu, Rishabh Dev Yadav, Spandan Roy, Jinoh Lee and Simone Baldi 
   paper_link: https://ieeexplore.ieee.org/abstract/document/10011673
   video_link: https://youtu.be/G1whZNlz9zw
   paper: '[Paper]'
   video: '[Video]'
-  conf: ROBIO, 2022
+  conf: IEEE International Conference on Robotics and Biomimetics (ROBIO), 2022
   # review: Under Review
+  image: /assets/images/papers/ROBIO2022.png
 
 
-- name: Adaptive Artificial Time Delay Control for Bipedal Walking with Robustification to State- dependent Constraint Forces;
+- name: Adaptive Artificial Time Delay Control for Bipedal Walking with Robustification to State- dependent Constraint Forces
   authors: Amisha Bhaskar*, Swati Dantu*, Spandan Roy, Jinoh Lee and Simone Baldi 
   paper_link: https://ieeexplore.ieee.org/document/9659482
   video_link: https://youtu.be/TQxreImz7No
   paper: '[Paper]'
   video: '[Video]'
-  conf: ICAR, 2021
+  conf:  International Conference on Advanced Robotics (ICAR), 2021
   # review: Under Review
+  image: /assets/images/papers/ICAR2021.png
 
 

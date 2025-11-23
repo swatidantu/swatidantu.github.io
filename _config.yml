@@ -4,7 +4,7 @@ title: "Swati"
 title2: "Dantu"
 favicon: /favicon.ico
 # default: ""
-description: "Quirks of Swati Dantu"
+description: ""
 # keywords: "SEO, blog, web, minimalist, University of Nottingham, Computer Science, Student, Programming, Placements"
 url: https://swatidantu.github.io # site url
 baseurl: "" # apply repo name if use it under gh-pages branch
@@ -38,15 +38,16 @@ sass:
 # Author settings
 author:
   name     : "Swati Dantu"
-  job      : "Work-in-Progress Robotics Researcher"
-  bio      : "Check out some of the projects I've worked on in the past."
+  # job      : "Work-in-Progress Robotics Researcher"
+  # bio      : "Check out some of the projects I've worked on in the past."
   # thumb    : /assets/images/me.png
-  email    : swati.dantu@gmail.com
+  email    : swati.dantu@cvut.cz
   url      : https://swatidantu.github.io
-  github   : https://github.com/swatidantu
+  # github   : https://github.com/swatidantu
   twitter  : https://twitter.com/swati_dantu
   facebook : 
-linkedin : 
+  scholar  : https://scholar.google.com/citations?user=uteiygsAAAAJ
+  linkedin : https://in.linkedin.com/in/swati-dantu-0b8b86187
 
 # social settings
 og_locale: "en_UK"

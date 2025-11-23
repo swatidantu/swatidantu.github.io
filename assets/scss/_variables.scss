@@ -1,12 +1,14 @@
 // Typography
-$base-font-family: 'Open Sans', sans-serif;
-/*@import url('https://fonts.googleapis.com/css?family=Open Sans');*/
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+$base-font-family: 'Fira Sans', sans-serif;
+/* Load Fira Sans from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;500;600;700;800&display=swap');
 /*$base-font-family: Roboto, fixed-width;*/
 $heading-font-family: $base-font-family;
 
 // Font Sizes
-$base-font-size: 18px;
+$base-font-size: 14px;
+// Section-level font size used for News and Publications (change this to update both)
+$section-font-size: $base-font-size;
 
 // Line height
 $base-line-height: 1.5;

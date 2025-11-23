@@ -1,0 +1,19 @@
+<section class="news-section">
+  <h2>Featured News</h2>
+  <div class="news-list">
+    {% if site.data.news and site.data.news.size > 0 %}
+      {% for item in site.data.news %}
+      <div class="news-item">
+        <div class="news-date">{{ item.date | date: "%b %Y" }}</div>
+        <div class="news-body">{{ item.text | markdownify | replace: '<a ', '<a target="_blank" rel="noopener noreferrer" ' }}</div>
+      </div>
+      {% endfor %}
+    {% else %}
+      <!-- Fallback sample items if no `_data/news.yml` present -->
+      <div class="news-item">
+        <div class="news-date">May 12, 2025</div>
+        <div class="news-body">NA.</div>
+      </div>
+    {% endif %}
+  </div>
+</section>

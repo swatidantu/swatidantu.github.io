@@ -1,0 +1,25 @@
+// Paper list styles moved into SCSS pipeline
+// Uses `$blue-color` from `_variables.scss` for consistency
+
+.paper-list{
+  list-style:none;padding:0;margin:0;
+}
+.paper-item{
+  display:flex;align-items:flex-start;padding:14px 0;border-radius:6px;margin-bottom:16px;background:transparent;box-shadow:none;
+}
+.paper-item:nth-child(odd){box-shadow:none;background:transparent}
+.thumb{flex:0 0 140px;margin-right:16px}
+.thumb img{width:140px;height:84px;object-fit:cover;border-radius:6px;border:1px solid #e4e4e4}
+.meta{flex:1;min-width:0}
+.paper-title{margin:0 0 6px 0;font-size:$section-font-size;line-height:1.25;color:$black-color}
+.paper-title a{color:$blue-color;font-weight:400;text-decoration:none}
+.paper-authors{color:$dark-gray-color;font-weight:400;margin-bottom:6px;font-size:$section-font-size}
+.paper-conf{color:$dark-gray-color;font-weight:400;margin-bottom:6px;font-size:$section-font-size}
+.paper-links{color:$blue-color}
+.paper-links a{color:$blue-color;text-decoration:none;margin-right:10px;font-size:$section-font-size}
+
+@media (max-width:720px){
+  .paper-item{flex-direction:column}
+  .thumb{margin-right:0;margin-bottom:10px}
+  .thumb img{width:100%;height:auto}
+}
