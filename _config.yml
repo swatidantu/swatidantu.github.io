@@ -4,7 +4,7 @@ title: "Swati"
 title2: "Dantu"
 favicon: /favicon.ico
 # default: ""
-description: ""
+# description: ""
 # keywords: "SEO, blog, web, minimalist, University of Nottingham, Computer Science, Student, Programming, Placements"
 url: https://swatidantu.github.io # site url
 baseurl: "" # apply repo name if use it under gh-pages branch
@@ -48,6 +48,7 @@ author:
   facebook : 
   scholar  : https://scholar.google.com/citations?user=uteiygsAAAAJ
   linkedin : https://in.linkedin.com/in/swati-dantu-0b8b86187
+  cv: /assets/cv/cv2025.pdf
 
 # social settings
 og_locale: "en_UK"
