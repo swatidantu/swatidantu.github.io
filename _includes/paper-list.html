@@ -3,6 +3,7 @@
 {% for paper in site.data.paper-list %}
   {% capture paper_link %}{{ paper.paper_link }}{% endcapture %}
   {% capture video_link %}{{ paper.video_link }}{% endcapture %}
+  {% capture webpage_link %}{{ paper.webpage_link }}{% endcapture %}
   {% capture image %}{{ paper.image }}{% endcapture %}
   <li class="paper-item">
     <div class="thumb">
@@ -15,9 +16,9 @@
       <div class="paper-authors">{{ paper.authors }}</div>
       <div class="paper-conf">{{ paper.conf }}{% if paper.year %} • {{ paper.year }}{% endif %}</div>
       <div class="paper-links">
-        {% if paper.webpage %}<a href="{{ paper.webpage }}">webpage</a> | {% endif %}
-        {% if paper.video %}<a href="{{ paper.video_link }}">video</a> | {% endif %}
-        {% if paper.paper_link %}<a href="{{ paper.paper_link }}">paper</a>{% endif %}
+        {% if paper.webpage_link %}<a href="{{ paper.webpage_link }}">Webpage</a> | {% endif %}
+        {% if paper.video_link %}<a href="{{ paper.video_link }}">Video</a> | {% endif %}
+        {% if paper.paper_link %}<a href="{{ paper.paper_link }}">Paper</a>{% endif %}
       </div>
     </div>
   </li>
