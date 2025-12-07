@@ -34,8 +34,8 @@
 
 @media (max-width:720px){
   .intro-row{flex-direction:column}
-  .intro-media{flex:0 0 auto;justify-content:flex-start}
-  .intro-avatar-right{width:128px;height:128px}
+  .intro-media{display: flex;flex-direction: column;align-items: center;text-align: center;}
+  .intro-avatar-right{margin-bottom:1rem;max-width:150px;width:100%;display:block;margin-left:auto;margin-right:auto}
 }
 
 /* Profile links under the avatar */
@@ -46,7 +46,7 @@
 .profile-links .sep{color:#999;margin:0 4px}
 
 @media (max-width:720px){
-  .profile-links{flex-direction:column;align-items:flex-start;gap:6px}
+  .profile-links{display: flex;flex-wrap: wrap;justify-content: center;gap:0.5rem;margin-top:1rem;text-align:center}
 }
 
 /* Secondary profile links (row under avatar) */
@@ -56,7 +56,7 @@
 .profile-links-secondary a:hover{text-decoration:underline}
 
 @media (max-width:720px){
-  .profile-links-secondary{flex-direction:row;gap:6px}
+  .profile-links-secondary{margin-top:0.5rem;flex-direction:row;gap:6px;display: flex;flex-wrap: wrap;justify-content: center;gap:0.5rem;text-align:center}
 }
 
 /* Ensure page-level H3 headings are not bold (Featured News, Publications) */
